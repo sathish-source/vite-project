@@ -1,0 +1,69 @@
+.vegetable-products {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    height: 300px;
+    width: 380px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit:scale-down;
+  }
+  
+  .product-card h2 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 10px 10px;
+  }
+  
+
+  @media (max-width: 1200px) {
+    .product-list {
+      grid-template-rows: repeat(4,auto);
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-list {
+       grid-template-rows: repeat(2,auto);
+      grid-template-columns: repeat(5, auto);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list {
+      grid-template-rows: repeat(1,auto);
+      grid-template-columns: repeat(10,auto);
+    }
+  }

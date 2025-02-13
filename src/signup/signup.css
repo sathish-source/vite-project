@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-container {
+    background: rgba(255, 255, 255, 0.2); 
+    /* / Transparent background / */
+    backdrop-filter: blur(10px);
+    /* / / Blur effect  */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group{
+    padding-bottom: 30px;
+  }
+
+  .input-details{
+    font-size: medium;
+    height: 40px;
+    width: 350px;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    backdrop-filter: blur(10px);
+  }
+
+  input::placeholder{
+ font-size: larger;
+ padding-left: 10px;
+  }
+
+  .login{
+    color: antiquewhite;
+    margin-top: 10px;
+  }
+
+  .checkbox{
+    display: flex;
+    margin:10px 0  0 81px;
+    font-weight: 500;
+  }
+
+  .check-label{
+    display: flex;
+    margin-left: 104px;
+    margin-top: -19px;
+  }
+  
+  button {
+    height: 45px;
+    width: 190px;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
