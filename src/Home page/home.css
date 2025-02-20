@@ -4,7 +4,9 @@ body {
   }
   
   .home-page {
-    width: 106.70rem;
+    width: 100%;
+    position: fixed;
+    top: 0%;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -13,9 +15,12 @@ body {
   
 
   header {
-    background-color: gray;
-    color: white;
-    padding: 1rem;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
   }
   
   header h1 {
@@ -31,13 +36,13 @@ body {
   }
   
   nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
   }
   
   nav a:hover {
-    color: #e8f5e9;
+    color: #845bf3;
   }
   
 
